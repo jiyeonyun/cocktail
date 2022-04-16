@@ -4,10 +4,12 @@ import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 import Cocktail from './service/cocktail';
+import {Provider} from 'react-redux';
+
 const cocktail = new Cocktail();
 ReactDOM.render(
   <React.StrictMode>
-    <App cocktail={cocktail} />
+      <App cocktail={cocktail} />
   </React.StrictMode>,
   document.getElementById('root')
 );
