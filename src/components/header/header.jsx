@@ -6,8 +6,7 @@ import { useState } from 'react';
 const Header = ({name,setName}) => {
     const navigate = useNavigate();
     const goTo = (e)=>{
-        navigate('/list');
-        setName(e.target.getAttribute("name"));
+        navigate(`/${e.target.getAttribute("name")}list`);
     };
     const goMain = ()=>{
         navigate('/');
