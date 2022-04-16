@@ -1,0 +1,31 @@
+.listWrap{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Users/yunjiyeon/cocktail/public/image/bg00-removebg-preview.png');
+    height: 80%;
+}
+.ul{
+    width: 30rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.li{
+    border: 1.2px solid #999;
+    width: 11rem;
+    height: 1.5em;
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.784);
+}
+.li:hover{
+    transform: scale(1.1);
+}

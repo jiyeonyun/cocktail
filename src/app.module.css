@@ -5,7 +5,7 @@
 .Ndiv{
         height: 100vh;
         position: relative;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.83);
         color: white;
 }
 .icon{

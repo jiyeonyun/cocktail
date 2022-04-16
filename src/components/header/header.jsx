@@ -3,7 +3,7 @@ import styles from './header.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-const Header = ({name,setName}) => {
+const Header = ({}) => {
     const navigate = useNavigate();
     const goTo = (e)=>{
         navigate(`/${e.target.getAttribute("name")}list`);

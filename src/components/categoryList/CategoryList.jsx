@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import styles from './CategoryList.module.css';
 const CategoryList = ({cocktail}) => {
@@ -8,15 +9,15 @@ const CategoryList = ({cocktail}) => {
         .categoryList()
         .then(drink=>setCategorylist(drink))
     };
-    useState(()=>{
+    useEffect(()=>{
         category();
     },[]);
     return(
         <>
         <div className={styles.listWrap}>
-            <ul>
+            <ul className={styles.ul}>
                     {categoryList&&categoryList.map((item)=>{
-                        return  <li key={item.strCategory}>{item.strCategory}</li>;
+                        return  <li className={styles.li}key={item.strCategory}>{item.strCategory}</li>;
                     })}
             </ul>
         </div>
