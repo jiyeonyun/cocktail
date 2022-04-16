@@ -1,10 +1,9 @@
 import axios from 'axios';
 
 class Cocktail{
-    constructor(key){
+    constructor(){
     this.cocktail = axios.create({
-        baseURL:'www.thecocktaildb.com/api/json/v1/',
-        params: {key:key},
+        baseURL:'https://www.thecocktaildb.com//api/json/v1/1/',
     });
     }
 
@@ -16,7 +15,7 @@ class Cocktail{
     async categoryList(){
         const response = await this.cocktail.get('list.php',{
             params:{
-                c:list
+                c:'list'
             },
         });
         return response.data.drinks;
@@ -24,7 +23,7 @@ class Cocktail{
     async itemList(){
         const response = await this.cocktail.get('list.php',{
             params:{
-                i:list
+                i:'list'
             },
         });
         return response.data.drinks;
