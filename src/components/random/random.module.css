@@ -1,0 +1,36 @@
+.random{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    align-items: center;
+}
+.img{
+    border-radius: 1rem;
+    width: 28rem;
+}
+.randomList{
+    list-style: none;
+}
+.randomLi::before{
+    content: "🍹";
+    margin-right: 0.2rem;
+}
+.randomList{
+    padding-left: 0;
+}
+.span{
+    font-weight: bold;
+    margin-right: 0.2rem;
+    font-size: 1.1rem;
+    
+}
+.button{
+    border: none;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}

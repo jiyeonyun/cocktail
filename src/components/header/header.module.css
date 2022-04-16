@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.span{
+    margin-right: 0.5rem;
+    cursor: pointer;
+}

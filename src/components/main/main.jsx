@@ -3,18 +3,18 @@ import styles from './main.module.css';
 import { useEffect, useState } from 'react';
 import Header from '../header/header';
 import Random from '../random/random';
-import { useNavigate } from 'react-router-dom';
+
+
 const Main = ({cocktail}) => {
-    const navigate = useNavigate();
     const [rCocktail,setRcocktail] = useState();
     const [randoms,setRandoms] = useState(false);
     const [reRandom,setReRandoms] = useState(false);
-    const goTo = ()=>{
-        navigate('/list');
-    };
     const random = ()=>{
         setRandoms(true);
         setReRandoms(!reRandom);
+    }
+    const home = ()=>{
+        setRandoms(false);
     }
     useEffect(()=>{
         cocktail
@@ -23,15 +23,19 @@ const Main = ({cocktail}) => {
     },[reRandom])
     return(
         <div className={styles.main}>
-            <Header/>
-        <img className={styles.img} src="./pngegg.png" alt="coktail image" />
         {
-            randoms && <><Random rCocktail={rCocktail}/></>
+            !randoms && <> 
+            <div className={styles.imgwrap}>
+                <img className={styles.img} src="./image/bg.png" alt="" />
+                <img className={styles.img} src="./image/bg1.png" alt="" />
+            </div>
+            </>
         }
-        <div className={styles.buttons}>
-        <button className={styles.button} onClick={random}>🐹Random Drinks🐹</button>
-        <button className={styles.button} onClick={goTo}>🐰Go To Main🐰</button>
-        </div>
+        {
+            randoms && <><Random rCocktail={rCocktail} randoms={randoms} setRandoms={setRandoms}/></>
+        }
+        <button onClick={home} className={styles.button}>🏡HOME🏡</button>
+        <button className={styles.button} onClick={random}>🐹 Random Drinks 🐹</button>
         </div>
     );
 };

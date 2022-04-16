@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+.imgWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img{
+    width: 20em;
+}
+.button{
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.button:hover{
+    transform: scale(1.1);
+}
