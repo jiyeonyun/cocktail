@@ -16,8 +16,8 @@ const Header = ({name,setName}) => {
         <header className={styles.header}>
             <h3 onClick={goMain} className={styles.title}>Cocktail~🍹</h3>
             <div className={styles.spanWrap}>
-            <span onClick={goTo} name='item' className={styles.span}>종류별</span>
-            <span onClick={goTo} name='category' className={styles.span}>재료별</span>
+            <span onClick={goTo} name='ingredients' className={styles.span}>ingredients</span>
+            <span onClick={goTo} name='category' className={styles.span}>category</span>
             </div>
         </header>
     );

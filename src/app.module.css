@@ -1,3 +1,24 @@
 .div{
     height: 100vh;
+    position: relative;
+}
+.Ndiv{
+        height: 100vh;
+        position: relative;
+        background-color: black;
+        color: white;
+}
+.icon{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    background-color: rgb(16, 37, 86);
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: rgb(255, 213, 0);
+}
+.icon:hover{
+    transform: scale(1.1);
 }

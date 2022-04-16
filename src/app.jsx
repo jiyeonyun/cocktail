@@ -4,11 +4,16 @@ import Main from './components/main/main';
 import List from './components/list/list';
 import Header from './components/header/header';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun,faMoon  } from '@fortawesome/free-solid-svg-icons';
+
 function App({cocktail}) {
   const [name,setName] = useState();
+  const [night,setNight] = useState(false);
+  const nightMode = () => setNight(!night);
+
   return (
-    <div className={styles.div}>
-      
+    <div className={!night? styles.div : styles.Ndiv }>
       <BrowserRouter>
       <Header setName={setName} name={name}/>
       <Routes>
@@ -16,6 +21,10 @@ function App({cocktail}) {
           <Route path='/list' element={<List cocktail={cocktail}/>}/>
         </Routes>
       </BrowserRouter>
+      {
+            !night  ?  <FontAwesomeIcon onClick={nightMode} icon={faSun} className={styles.icon}/>
+                    :   <FontAwesomeIcon onClick={nightMode} icon={faMoon} className={styles.icon}/>
+      }
     </div>
   );
 }

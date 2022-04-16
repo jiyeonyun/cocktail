@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import Header from '../header/header';
 import Random from '../random/random';
 
-
 const Main = ({cocktail}) => {
     const [rCocktail,setRcocktail] = useState();
     const [randoms,setRandoms] = useState(false);
@@ -13,9 +12,7 @@ const Main = ({cocktail}) => {
         setRandoms(true);
         setReRandoms(!reRandom);
     }
-    const home = ()=>{
-        setRandoms(false);
-    }
+    const home = ()=> setRandoms(false);
     useEffect(()=>{
         cocktail
         .random()
