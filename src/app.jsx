@@ -10,6 +10,7 @@ import ItemList from './components/itemList/itemList';
 import { useEffect } from 'react';
 import Category from './components/category/category';
 import Item from './components/item/item';
+import Detail from './components/detail/detail';
 
 function App({cocktail}) {
   const [itemList,setItemList] = useState();
@@ -30,6 +31,7 @@ function App({cocktail}) {
           <Route path='/ingredientslist' element={<ItemList itemList={itemList} cocktail={cocktail}/>} />
           <Route path='/categorys' element={<Category cocktail={cocktail}/>}/>
           <Route path='/items' element={<Item cocktail={cocktail}/>}/>
+          <Route path='/detail' element={<Detail cocktail={cocktail}/>}/>
         </Routes>
       </BrowserRouter>
       {

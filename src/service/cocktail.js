@@ -44,6 +44,14 @@ class Cocktail{
         });
         return response.data.drinks;
     }
+    async name(q){
+        const response = await this.cocktail.get('search.php',{
+            params:{
+                s:q
+            },
+        });
+        return response.data.drinks;
+    }
 }
 
 export default Cocktail;

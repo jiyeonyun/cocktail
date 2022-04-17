@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './CategoryList.module.css';
+
 const CategoryList = ({cocktail}) => {
     const navigate = useNavigate();
     const [categoryList,setCategorylist] = useState();
