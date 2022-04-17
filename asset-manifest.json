@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cocktail/static/css/main.1f4f5905.css",
+    "main.js": "/cocktail/static/js/main.a38fec76.js",
+    "static/js/787.5639fac3.chunk.js": "/cocktail/static/js/787.5639fac3.chunk.js",
+    "static/media/bg00-removebg-preview.png": "/cocktail/static/media/bg00-removebg-preview.f76892605cd00995d8d8.png",
+    "index.html": "/cocktail/index.html",
+    "main.1f4f5905.css.map": "/cocktail/static/css/main.1f4f5905.css.map",
+    "main.a38fec76.js.map": "/cocktail/static/js/main.a38fec76.js.map",
+    "787.5639fac3.chunk.js.map": "/cocktail/static/js/787.5639fac3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f4f5905.css",
+    "static/js/main.a38fec76.js"
+  ]
+}
