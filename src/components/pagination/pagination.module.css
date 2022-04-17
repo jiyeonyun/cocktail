@@ -5,6 +5,9 @@
     width: 30rem;
     margin-top: 5rem;
 }
+.nav{
+    height: 5rem;
+}
 .ul{
     display: flex;
     list-style: none;

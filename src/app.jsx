@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun,faMoon  } from '@fortawesome/free-solid-svg-icons';
 import ItemList from './components/itemList/itemList';
 import { useEffect } from 'react';
+import Category from './components/category/category';
+import Item from './components/item/item';
 
 function App({cocktail}) {
   const [itemList,setItemList] = useState();
@@ -26,6 +28,8 @@ function App({cocktail}) {
           <Route exact path='/' element={<Main cocktail={cocktail}/>} />
           <Route path='/categorylist' element={<CategoryList cocktail={cocktail}/>} />
           <Route path='/ingredientslist' element={<ItemList itemList={itemList} cocktail={cocktail}/>} />
+          <Route path='/categorys' element={<Category cocktail={cocktail}/>}/>
+          <Route path='/items' element={<Item cocktail={cocktail}/>}/>
         </Routes>
       </BrowserRouter>
       {
