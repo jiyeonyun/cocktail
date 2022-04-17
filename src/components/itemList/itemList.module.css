@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
     background-image: url('/Users/yunjiyeon/cocktail/public/image/bg00-removebg-preview.png');
+    height: 80%;
 }
 .ul{
     list-style: none;

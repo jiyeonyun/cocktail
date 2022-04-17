@@ -7,7 +7,11 @@ return (
     <>
     <ul className={styles.ul}>
     {category&&category.map((item)=>{
-    return  <li className={styles.li} key={item.idDrink}>{item.strDrink}</li>;
+    return  <li className={styles.li} key={item.idDrink}>
+            <img className={styles.img} src={item.strDrinkThumb} alt="" />
+            <h4 className={styles.title}>{item.strDrink}</h4>
+            <button className={styles.button}>Detail</button>
+            </li>;
     })}
     </ul>
 </>
