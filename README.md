@@ -7,50 +7,53 @@
 <img src="https://img.shields.io/badge/Git hub-181717?style=flat-square&logo=Github&logoColor=white"/>
 <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat-square&logo=Yarn&logoColor=white"/>
 <br>
-<img width="487" alt="main" src="https://user-images.githubusercontent.com/94913420/162649836-b2ea02b6-791c-489f-af24-194c0e9bbe98.png">
-
+<img width="1416" alt="main" src="https://user-images.githubusercontent.com/94913420/163724715-a64ba700-7da9-42f4-87bc-1ccab42daf15.png">
 <br>
 실행시 처음 나오는 화면 입니다.
 <br> <br>
-
+<img width="1415" alt="nigth" src="https://user-images.githubusercontent.com/94913420/163724717-3ec6251d-4e10-4648-8158-c1b5e73c5f0a.png">
+<br>
+하단버튼을 누르면 다크모드가 가능합니다.
+<br>
  *** 
  
-간단한 가계부를 만들었습니다.<br>
-redux를 사용해 상태관리를 하였습니다.<br>
 
 
 ## 상세 페이지
 
 ### 메인화면
 <br><br><br>
-<img width="487" alt="main" src="https://user-images.githubusercontent.com/94913420/162649836-b2ea02b6-791c-489f-af24-194c0e9bbe98.png">
+<img width="1416" alt="main" src="https://user-images.githubusercontent.com/94913420/163724715-a64ba700-7da9-42f4-87bc-1ccab42daf15.png">
 
 <br><br>
 실행시 화면입니다.<br>
-지출금액, 수입금액,총계와 추가버튼 캘린더 버튼이있습니다.
+다크모드버튼, 카테고리별, 재료별, 랜덤버튼이 있습니다.
 
 <br><br><br>
 ### 상세 기능
 <br><br><br>
-<img width="421" alt="m" src="https://user-images.githubusercontent.com/94913420/162649851-b2b336e8-ce1c-42db-b7bc-6985c37ade11.png">
-<img width="430" alt="p" src="https://user-images.githubusercontent.com/94913420/162649854-83b0002a-1eb4-4862-8d1e-9548a6e93fb1.png">
-플러스 버튼을 누르면 내역을 추가할 수 있습니다<br>
-지출 수입 버튼을 누르면 각각의 버튼의 색상이 바뀝니다<br>
+<img width="1412" alt="detail" src="https://user-images.githubusercontent.com/94913420/163724763-956ac215-9aa7-415a-98fb-df9572941a2b.png">
+
+랜덤 버튼을 누르면 랜덤으로 칵테일을 추천해 줍니다.<br>
 <br><br><br>
 
 ### 추가,삭제,테마설정
-<img width="483" alt="minusadd" src="https://user-images.githubusercontent.com/94913420/162649842-ef07abae-fbaf-4eb0-bd6b-5ff69f54dd59.png">
+<img width="1417" alt="category" src="https://user-images.githubusercontent.com/94913420/163724784-f3a88f00-3ff3-4cec-9bda-84ae87f7702b.png">
 <br><br>
-<img width="464" alt="allad" src="https://user-images.githubusercontent.com/94913420/162649846-51d2bf78-6a3c-43ae-8abe-3a0e514dbf88.png">
-<br><br>
-수입과 지출을 기록했습니다.
+카테고리별 메뉴가 있습니다
 <br>
-수입내역과 지출내역 각각에 누적이 됩니다. 수입과 지출을 더해 총계를 냅니다.
-<br><br><br>
-<img width="402" alt="select" src="https://user-images.githubusercontent.com/94913420/162649848-65add00c-2d12-4408-a342-7e02ea066518.png">
+<img width="1415" alt="list" src="https://user-images.githubusercontent.com/94913420/163724785-f8a63249-2d66-424f-816b-67bdc83e07b9.png">
 <br><br>
-종류는 선택할수 있습니다.
+들어가게되면 리스트가 나옵니다. 각 리스트별로 칵테일 세부사항에 들어갈수 있습니다.
 <br><br><br>
-<img width="478" alt="cal" src="https://user-images.githubusercontent.com/94913420/162649856-70480d20-7084-491c-ac9e-43ceb33f871f.png">
+<img width="1406" alt="detaill" src="https://user-images.githubusercontent.com/94913420/163724809-c6072551-d059-462e-9312-33a451a9fb98.png">
+<br><br>
+칵테일의 이름 논알콜 알콜여부 그리고 레시피가 나옵니다. 상단의 별표표시를 이용해 좋아하는 칵테일 리스트에 추가할 수 있습니다.
 <br><br><br>
-캘린더 버튼입니다. <br>
+<img width="382" alt="detail star" src="https://user-images.githubusercontent.com/94913420/163724813-64997ff9-59d0-41ea-a0f4-e93aa5ad2298.png">
+<br><br><br>
+<img width="1417" alt="like" src="https://user-images.githubusercontent.com/94913420/163724815-91c4127e-cd27-4527-a39e-a71969659cc3.png">
+<img width="1424" alt="like del" src="https://user-images.githubusercontent.com/94913420/163724817-e2d5d4b9-6587-4267-a778-7104662f7c7d.png">
+<br><br>
+즐겨찾기에 추가한 칵테일들이 저장됩니다. 별표를 한번 더 누르며 삭제됩니다.
+<br>
