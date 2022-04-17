@@ -12,12 +12,11 @@ const CategoryPost = ({category}) => {
                 q: q,
             },
         });
-
     };
 return (
     <>
     <ul className={styles.ul}>
-    {category&&category.map((item)=>{
+    {category && category.map((item)=>{
     return  <li className={styles.li} key={item.idDrink}>
             <img className={styles.img} src={item.strDrinkThumb} alt="" />
             <h4 className={styles.title}>{item.strDrink}</h4>

@@ -16,6 +16,7 @@
     box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.779);
     background-color: whitesmoke;
     color: black;
+    position: relative;
 }
 .img{
     width: 10rem;

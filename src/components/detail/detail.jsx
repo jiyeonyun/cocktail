@@ -5,23 +5,27 @@ import { useLocation } from 'react-router-dom';
 import styles from './detail.module.css';
 const Detail = ({cocktail}) => {
     const location = useLocation();
+    const [star,setStar] = useState(false);
     const q = location.state.q;
     const [item,setItem] = useState();
+    const getStar = ()=>{
+        setStar(!star);
+    }
     useEffect(()=>{
         cocktail
         .name(q)
-        .then(drink => {
-                        setItem(drink[0]);
-                        });
+        .then(drink => {setItem(drink[0]);});
     },[]);
-    console.log(item)
     return(
         <div className={styles.itemwrap}>
         {
             item && <div className={styles.wrap}>
             <img className={styles.img} src={item.strDrinkThumb} alt="" />
             <div className={styles.des}>
-                <h3 className={styles.title}>{item.strDrink}</h3>
+                <div className={styles.titleWrap}>
+                    <h3 className={styles.title}>{item.strDrink}</h3>
+                    <button onClick={getStar} className={star?styles.ylike:styles.like}>{star?'★':'☆'}</button>
+                </div>
                 <h4 className={styles.h4}>{item.strAlcoholic}</h4>
                 <p className={styles.p}><span className={styles.span}>category: </span>{item.strCategory} </p>
                 <p className={styles.p}><span className={styles.span}>glass: </span>{item.strGlass}</p>
@@ -39,8 +43,10 @@ const Detail = ({cocktail}) => {
                 </ul>
                 <p className={styles.desp}>{item.strInstructions}</p>
             </div>
+            
         </div>
         }
+        
         </div>
     );
 };

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .img{
     width: 20rem;
@@ -15,6 +16,7 @@
 }
 .title{
     margin-bottom: 0;
+    margin-top: 0;
 }
 .des{
     display: flex;
@@ -52,4 +54,31 @@ margin-bottom: 0.3rem;
 .desp{
     width: 30rem;
     text-align: center;
+}
+.ylike{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+    color: rgb(230, 173, 4);
+}
+.like{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+}
+.titleWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
 }
