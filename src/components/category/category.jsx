@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
 import CategoryPost from '../categoryPost/categoryPost';
 import Pagination from '../pagination/pagination';
+import styles from './category.module.css';
 const Category = ({cocktail}) =>{
     const location = useLocation();
     const q = location.state.q;
@@ -26,7 +27,7 @@ const Category = ({cocktail}) =>{
                         });
     },[])
     return(
-            <div>
+            <div className={styles.item}>
                 <CategoryPost category={category && currentPosts(category)} postsPerPage={postsPerPage} currentPage={currentPage}/>
                 <Pagination postsPerPage={postsPerPage} totalPosts={length && length} paginate={setCurrentPage}/>
             </div>

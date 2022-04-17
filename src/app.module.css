@@ -1,12 +1,16 @@
 .div{
-    height: 100vh;
+    height: 100%;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 .Ndiv{
-        height: 100vh;
+        height: 100%;
         position: relative;
         background-color: rgba(0, 0, 0, 0.83);
         color: white;
+        margin: 0;
+        padding: 0;
 }
 .icon{
     position: fixed;

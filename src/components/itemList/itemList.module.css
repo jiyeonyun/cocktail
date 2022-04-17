@@ -1,10 +1,9 @@
 .listWrap{
-    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('/Users/yunjiyeon/cocktail/public/image/bg00-removebg-preview.png');
-    height: 80%;
+    height: 100vh;
 }
 .ul{
     list-style: none;
