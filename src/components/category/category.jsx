@@ -18,7 +18,6 @@ const Category = ({cocktail}) =>{
         currentPosts = tmp.slice(indexOfFirst, indexOfLast);
         return currentPosts;
     }
-    console.log(length);
     useEffect(()=>{
         cocktail
         .category(q)
