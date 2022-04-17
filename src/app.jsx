@@ -24,7 +24,7 @@ function App({cocktail}) {
 },[]);
   return (
     <div className={!night? styles.div : styles.Ndiv }>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
           <Route exact path='/' element={<Main cocktail={cocktail}/>} />
