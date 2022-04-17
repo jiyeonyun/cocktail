@@ -75,6 +75,8 @@ margin-bottom: 0.3rem;
     margin: 0;
     padding: 0;
     margin-left: 0.5rem;
+    color: rgb(168, 168, 168);
+    
 }
 .titleWrap{
     display: flex;

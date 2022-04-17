@@ -3,19 +3,36 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './detail.module.css';
-const Detail = ({cocktail}) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fas, faStar  } from '@fortawesome/free-solid-svg-icons';
+const Detail = ({cocktail,likeArray,setLikeArray}) => {
     const location = useLocation();
     const [star,setStar] = useState(false);
     const q = location.state.q;
     const [item,setItem] = useState();
     const getStar = ()=>{
         setStar(!star);
+        likearr();
+    };
+    const likearr = ()=>{
+        const likeName = item.strDrink;
+        console.log(likeName)
+        if(!star){
+            let newArr = [...likeArray];
+            newArr.push(likeName)
+            setLikeArray(newArr);
+        }
+        else if(star){
+            let newArr = [...likeArray];
+            newArr.splice(newArr.indexOf(likeName),1);
+            setLikeArray(newArr);
+        };
     }
     useEffect(()=>{
         cocktail
         .name(q)
         .then(drink => {setItem(drink[0]);});
-    },[]);
+    },[star]);
     return(
         <div className={styles.itemwrap}>
         {
@@ -24,7 +41,7 @@ const Detail = ({cocktail}) => {
             <div className={styles.des}>
                 <div className={styles.titleWrap}>
                     <h3 className={styles.title}>{item.strDrink}</h3>
-                    <button onClick={getStar} className={star?styles.ylike:styles.like}>{star?'★':'☆'}</button>
+                    <FontAwesomeIcon onClick={getStar} icon={faStar} className={star?styles.ylike:styles.like}/>
                 </div>
                 <h4 className={styles.h4}>{item.strAlcoholic}</h4>
                 <p className={styles.p}><span className={styles.span}>category: </span>{item.strCategory} </p>

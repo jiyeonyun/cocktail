@@ -11,10 +11,11 @@ import { useEffect } from 'react';
 import Category from './components/category/category';
 import Item from './components/item/item';
 import Detail from './components/detail/detail';
-
+import LikeList from './components/likeList/likeList'
 function App({cocktail}) {
   const [itemList,setItemList] = useState();
   const [night,setNight] = useState(false);
+  const [likeArray,setLikeArray] = useState(['410 Gone']);
   const nightMode = () => setNight(!night);
   useEffect(()=>{
     cocktail
@@ -31,7 +32,8 @@ function App({cocktail}) {
           <Route path='/ingredientslist' element={<ItemList itemList={itemList} cocktail={cocktail}/>} />
           <Route path='/categorys' element={<Category cocktail={cocktail}/>}/>
           <Route path='/items' element={<Item cocktail={cocktail}/>}/>
-          <Route path='/detail' element={<Detail cocktail={cocktail}/>}/>
+          <Route path='/detail' element={<Detail cocktail={cocktail} likeArray={likeArray} setLikeArray={setLikeArray} />}/>
+          <Route path='/like' element={<LikeList cocktail={cocktail} likeArray={likeArray} setLikeArray={setLikeArray} />}/>
         </Routes>
       </BrowserRouter>
       {
