@@ -24,7 +24,8 @@
     cursor: pointer;
     border-radius: 1rem;
     font-weight: bold;
-    background-color: rgba(245, 245, 245, 0.784);
+    background-color: rgba(104, 104, 104, 0.786);
+    color: #eee;
 }
 .li:hover{
     transform: scale(1.1);

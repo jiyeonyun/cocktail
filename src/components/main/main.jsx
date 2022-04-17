@@ -23,8 +23,7 @@ const Main = ({cocktail}) => {
         {
             !randoms && <> 
             <div className={styles.imgwrap}>
-                <img className={styles.img} src="./image/bg.png" alt="" />
-                <img className={styles.img} src="./image/bg1.png" alt="" />
+                <img className={styles.img} src="./image/bg00-removebg-preview.png" alt="" />
             </div>
             </>
         }

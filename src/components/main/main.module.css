@@ -5,6 +5,7 @@
     flex-direction: column;
     height: 80%;
     position: relative;
+    
 }
 .imgWrap{
     display: flex;

@@ -1,0 +1,26 @@
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin-top: 5rem;
+}
+.ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+.li{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.li:hover{
+    transform: scale(1.05);
+    color: rgb(239, 185, 5);
+}

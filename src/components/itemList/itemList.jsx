@@ -4,18 +4,10 @@ import { useState } from 'react';
 import Pagination from '../pagination/pagination';
 import Posts from '../posts/posts';
 import styles from './itemList.module.css';
-const ItemList = ({cocktail}) => {
-    const [itemList,setItemList] = useState();
+const ItemList = ({itemList}) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
-    const item = ()=>{
-        cocktail
-        .itemList()
-        .then(drink=>setItemList(drink))
-    };
-    useEffect(()=>{
-        item();
-    },[]);
+    const length = itemList.length;
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
     function currentPosts(tmp) {
@@ -27,8 +19,8 @@ const ItemList = ({cocktail}) => {
         <>
         <div className={styles.listWrap}>
             <ul className={styles.ul}>
-                <Posts itemList={currentPosts(itemList)}/>
-                <Pagination postsPerPage={postsPerPage} totalPosts={itemList.length} paginate={setCurrentPage}/>
+                <Posts itemList={currentPosts(itemList)} postsPerPage={postsPerPage} currentPage={currentPage}/>
+                <Pagination postsPerPage={postsPerPage} totalPosts={length} paginate={setCurrentPage}/>
             </ul>
         </div>
         </>
