@@ -1,0 +1,45 @@
+.likeWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.li{
+    margin: 0.5rem;
+    width: 10rem;
+    padding: 2rem;
+    border: 1px solid #999;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.779);
+    background-color: whitesmoke;
+    color: black;
+}
+.img{
+    width: 10rem;
+    border-radius: 1rem;
+}
+.icon{
+    pointer-events: none;
+}
+.ylike{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: rgb(255, 200, 0);
+    cursor: pointer;
+}
+.ylike:hover{
+    transform: scale(1.1);
+    color: rgb(255, 170, 0);
+}

@@ -15,7 +15,7 @@ import LikeList from './components/likeList/likeList'
 function App({cocktail}) {
   const [itemList,setItemList] = useState();
   const [night,setNight] = useState(false);
-  const [likeArray,setLikeArray] = useState(['410 Gone']);
+  const [likeArray,setLikeArray] = useState([]);
   const nightMode = () => setNight(!night);
   useEffect(()=>{
     cocktail
@@ -33,7 +33,7 @@ function App({cocktail}) {
           <Route path='/categorys' element={<Category cocktail={cocktail}/>}/>
           <Route path='/items' element={<Item cocktail={cocktail}/>}/>
           <Route path='/detail' element={<Detail cocktail={cocktail} likeArray={likeArray} setLikeArray={setLikeArray} />}/>
-          <Route path='/like' element={<LikeList cocktail={cocktail} likeArray={likeArray} setLikeArray={setLikeArray} />}/>
+          <Route path='/likelist' element={<LikeList cocktail={cocktail} likeArray={likeArray} setLikeArray={setLikeArray} />}/>
         </Routes>
       </BrowserRouter>
       {

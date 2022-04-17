@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './detail.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fas, faStar  } from '@fortawesome/free-solid-svg-icons';
+import {  faStar  } from '@fortawesome/free-solid-svg-icons';
 const Detail = ({cocktail,likeArray,setLikeArray}) => {
     const location = useLocation();
     const [star,setStar] = useState(false);
@@ -16,10 +16,11 @@ const Detail = ({cocktail,likeArray,setLikeArray}) => {
     };
     const likearr = ()=>{
         const likeName = item.strDrink;
+        const id = item.idDrink ;
         console.log(likeName)
         if(!star){
             let newArr = [...likeArray];
-            newArr.push(likeName)
+            newArr.push({id:id,name:likeName,img:item.strDrinkThumb})
             setLikeArray(newArr);
         }
         else if(star){
@@ -28,6 +29,7 @@ const Detail = ({cocktail,likeArray,setLikeArray}) => {
             setLikeArray(newArr);
         };
     }
+    console.log(likeArray)
     useEffect(()=>{
         cocktail
         .name(q)
